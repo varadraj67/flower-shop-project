@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <h1>Victoria Garden </h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Flower" />
+        <button>Search</button>
+    </div>
+    <nav class="nav-links">
+        <a href="#">Account</a>
+        <a href="#">Orders</a>
+        <a onclick="viewCart()">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+    <div class="hero">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Fresh Flowers Delivered to Your Doorstep</h1>
+            <p>Explore our collection of beautiful flowers for every occasion.</p>
+            <a href="#products" class="hero-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Add some placeholder for products -->
+      <div id="products" style="height: 800px; text-align: center; padding: 50px;">
+        <h2>Our Products</h2>
+        <p>Explore a wide variety of flowers...</p>
+        <section id="shop">
+            <div class="flower-container">
+
+                <div class="flower-card">
+                    <img src="f1.avif" alt="Flower 1">
+                    <h3>Rose Bouquet</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f2.avif" alt="Flower 2">
+                    <h3>Tulip Bunch</h3>
+                    <p>$19.99</p>
+                    <button onclick="addToCart(1, 'Tulip Bunch', 19.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f3.avif" alt="Flower 3">
+                    <h3>Lily Arrangement</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f4.avif" alt="Flower 4">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>$24.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f4.avif" alt="Flower 4">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>$24.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flower-container">
+                
+                <div class="flower-card">
+                    <img src="f1.avif" alt="Flower 1">
+                    <h3>Rose Bouquet</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f2.avif" alt="Flower 2">
+                    <h3>Tulip Bunch</h3>
+                    <p>$19.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f3.avif" alt="Flower 3">
+                    <h3>Lily Arrangement</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f4.avif" alt="Flower 4">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>$24.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                <div class="flower-card">
+                    <img src="f4.avif" alt="Flower 4">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>$24.99</p>
+                    <button onclick="addToCart(1, 'Rose Bouquet', 29.99)">Add to Cart</button>
+                </div>
+                
+            </div>
+        </section>
+
+      </div>
+      <div id="branch">
+        <h2 style="padding-left: 10px;">Our Branch</h2>
+        <h4>1) PUNE [NEAR HIGHWAY ROAD] - CONTACT: <span>9898998999</span></h4>
+        <h4>2) NAGPUR [CITY MALL] - CONTACT: <span>9798998999</span></h4>
+        <h4>3) SOLAPUR [BEHIND G.A.HIGH SCHOOL] - CONTACT: <span>9698998999</span></h4>
+    </div>
+    
+
+    <section id="contact" class="contact-us">
+        <div class="container">
+          <h2>Contact us</h2>
+          <div class="contact-info">
+            <div>
+              <div>
+                <img src="https://img.icons8.com/?&id=K0YikLWMQep1&format=png&color=000000" alt="">
+                <div>
+                  <span>Call us:</span>
+                  <a href="tel:+9178914 696 42"><span>(+91)78914 696 42</span></a>
+    
+                </div>
+              </div>
+              <div>
+                <img src="https://img.icons8.com/?&id=PyVmwJx682vD&format=png&color=000000" alt="">
+                <div>
+                  <span>E-mail :</span>
+                  <a href="mailto:flower@gmail.com"><span>flower@gmail.com</span></a>
+    
+                </div>
+              </div>
+              <div>
+                <img src="https://img.icons8.com/?&id=3FyoRnlUZm9X&format=png&color=000000" alt="">
+                <div>
+                  <span>Working Hours:</span>
+                  <span>Sun - Sat <br>(9.00am - 7.00pm)</span>
+                  <span>Tue(Closed)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61094.96076270933!2d74.54290040860813!3d16.854360335604756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10c8187f060eb%3A0x37911f53cdc1ddb3!2sSangli%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1732350996257!5m2!1sen!2sin"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </section>
+    
+      <footer>
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>About us</h3>
+            <p>It was popularised in the 1960s with the release of latest sheets containing Lorem Ipsum passage.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Google+</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-instagram">
+            <h3>Products</h3>
+            <div class="insta-gallery">
+              <a href="foam tape">foam tape</a>.
+              <a href="floral foam">floral foam</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        // Optional Smooth Scroll Button (if added)
+    // Scroll to top button (can enhance further if needed)
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.createElement("button");
+      btn.innerHTML = "⬆ Top";
+      btn.className = "scroll-top-btn";
+      btn.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        background: #f8b400;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        z-index: 1000;
+      `;
+    
+      document.body.appendChild(btn);
+    
+      // Show/hide button on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+    
+      // Scroll to top on click
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+    // taskbar 
+    let cart = [];
+
+function addToCart(id, name, price) {
+    const product = { id, name, price };
+    cart.push(product);
+    document.getElementById('cart-count').innerText = cart.length;
+    alert(`${name} has been added to your cart!`);
+}
+
+function viewCart() {
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+    } else {
+        let cartItems = "Items in your cart:\n";
+        cart.forEach(item => {
+            cartItems += `${item.name} - $${item.price}\n`;
+        });
+        alert(cartItems);
+    }
+}
+      </script>
+
+</body>
+</html>
